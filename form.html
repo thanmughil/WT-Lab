@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCT | Student Details</title>
+    <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="form">
+            <div class="title">
+                <h2>Student Details</h2>
+            </div>
+            <form method="post">
+                <div class="input fitem">
+                <input type="text" name="Name" placeholder="Enter Name :">
+                <br>
+                <input type="text" name="Roll No" placeholder="Enter Roll No. :">
+                <br>
+                <select name="Department">
+                    <option value="IT">IT</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Mech">Mech</option>
+                    <option value="Civil">Civil</option>
+                </select>
+                <br>
+                <input type="number" name="Age" placeholder="Enter Age :">
+                </div>
+                <div class="submit">
+                <button type="submit" id="submit" onsubmit="valform">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    let reload = true
+    const subbut = document.getElementById('submit');
+    subbut.addEventListener('click', () => {
+        const inputs = document.getElementsByTagName("input");
+        Array.from(inputs).forEach(input => {
+            if((input['value']) === '') {
+                alert(`Invalid ${input['name']}!`);
+                location.href = 'form.html';
+                reload = False;
+            }
+        });
+        const selval = document.getElementsByName('Department');
+        Array.from(selval).forEach(val => {
+            if(val['value'] != 'IT') {
+                alert('Invalid Department!');
+                location.href = "form.html";
+                reload = False;
+            }        
+        });
+    });
+</script>
+</body>
+</html>
