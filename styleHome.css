@@ -1,0 +1,110 @@
+#gct, #title {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 2px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+#title {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 90px;
+    margin: 0px 5px;
+    align-content: center;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#title {
+    background-color: gray;
+    background-image: none;
+}
+
+.list, .table {
+    padding: 10px;
+    margin: 68px;
+    border-width: 5px;
+    border-style: double;
+    border-color: white;
+}
+
+#deps {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 2px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    background-image: url(bw.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+table {
+    border-width: 5px;
+    border-style: double;
+    border-color: white;
+    padding: 2px;
+    height: 518px;
+    margin: 2px;
+}
+
+th, td, thead {
+    border: 1px solid;
+    border-color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+th {
+    height: 60px;
+    width: 25%;
+    background-color: gray;
+}
+
+#year {
+    width: 10%;
+}
+
+ul.dep {
+    margin: auto;
+    display: contents;
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0px;
+}
+
+li {
+    display: block;
+    text-align: center;
+    align-self: center;
+    border-radius: 10px;
+    margin: 12px 0px;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
